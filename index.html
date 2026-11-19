@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>赖祖峰 ♥ 廖慧娟 的婚礼邀请函</title>
+<meta name="description" content="2027年2月14日（正月初九）中午12:08 · 于都县万嘉喜宴鎏金岁月厅 · 诚邀您来见证我们的幸福">
+<meta property="og:title" content="赖祖峰 ♥ 廖慧娟 的婚礼邀请函">
+<meta property="og:description" content="2027年2月14日（正月初九）中午12:08 · 于都县万嘉喜宴鎏金岁月厅 · 诚邀您来见证我们的幸福">
+<meta property="og:image" content="assets/share.jpg">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#1f78e8">
+<link rel="icon" href="assets/ui/heart.png">
+<link rel="preload" href="assets/pixel.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="share-thumb"><img src="assets/share.jpg" alt=""></div>
+
+<div id="loading">
+  <img class="jump" src="assets/ui/junimo_g.png" alt="">
+  <p>请柬正在送达……</p>
+</div>
+
+<button id="music" class="music" aria-label="音乐开关"><img src="assets/ui/note.png" alt=""></button>
+<div id="petals" aria-hidden="true"></div>
+
+<main id="app">
+
+<!-- ============ 封面 ============ -->
+<section id="cover">
+  <div class="cover-art"></div>
+  <div class="cover-top">
+    <p class="cover-en">WEDDING INVITATION</p>
+    <h1 class="logo"><span>我们</span><span>结婚啦</span></h1>
+    <div class="cover-names"><b>赖祖峰</b><img src="assets/ui/heart.png" alt="♥" class="beat"><b>廖慧娟</b></div>
+  </div>
+  <div class="cover-bottom">
+    <p class="cover-date">2027年2月14日 · 星期日</p>
+    <button id="open" class="btn btn-red big">打开请柬</button>
+    <p class="cover-hint">▼ 点击按钮或向上滑动 ▼</p>
+  </div>
+</section>
+
+<!-- ============ 来信 ============ -->
+<section id="letter" class="sec">
+  <h2 class="sign reveal"><img src="assets/ui/envelope.png" alt="">您有一封来信</h2>
+  <div class="paper reveal">
+    <p class="l">亲爱的亲朋好友：</p>
+    <p class="l big">我们要结婚啦！</p>
+    <p class="l">谨定于</p>
+    <p class="l hl">公历 2027年2月14日<br>（星期日）</p>
+    <p class="l hl">农历 丁未年正月初九</p>
+    <p class="l">举行结婚典礼，敬备喜宴。</p>
+    <p class="l">诚挚邀请您和家人光临，<br>见证我们的幸福时刻。</p>
+    <p class="l sig">新郎 赖祖峰<br>新娘 廖慧娟<br><span>敬 邀</span></p>
+    <img class="stamp" src="assets/ui/heart.png" alt="">
+  </div>
+</section>
+
+<!-- ============ 新人 ============ -->
+<section id="couple" class="sec">
+  <h2 class="sign reveal"><img src="assets/ui/star.png" alt="">一对新人</h2>
+
+  <div class="dialog panel reveal">
+    <div class="say">
+      <p>大家好，我是新郎<b>赖祖峰</b>。</p>
+      <p>往后的日子，地里的活我来干，家里的事听她的。</p>
+    </div>
+    <div class="who">
+      <img src="assets/art/portrait_groom.png" alt="新郎">
+      <span>新郎 · 赖祖峰</span>
+    </div>
+  </div>
+
+  <div class="dialog panel reveal left">
+    <div class="who">
+      <img src="assets/art/portrait_bride.png" alt="新娘">
+      <span>新娘 · 廖慧娟</span>
+    </div>
+    <div class="say">
+      <p>大家好，我是新娘<b>廖慧娟</b>。</p>
+      <p>这一次，我要把游戏里的幸福，过成真的日子。</p>
+    </div>
+  </div>
+
+  <figure class="frame reveal">
+    <img src="assets/p/couple.jpg" alt="新郎新娘合照" loading="lazy">
+  </figure>
+  <div class="hearts panel reveal">
+    <span>好感度</span>
+    <div class="hrow" id="hrow"></div>
+    <em>已满 · 可以结婚啦</em>
+  </div>
+</section>
+
+<!-- ============ 日期 ============ -->
+<section id="date" class="sec">
+  <h2 class="sign reveal"><img src="assets/ui/heart.png" alt="">婚礼日期</h2>
+  <div class="panel cal reveal">
+    <div class="cal-head">
+      <strong>2027年 2月</strong>
+      <span>丁未羊年 · 正月</span>
+    </div>
+    <div class="cal-week"><i>一</i><i>二</i><i>三</i><i>四</i><i>五</i><i>六</i><i class="sun">日</i></div>
+    <div class="cal-grid" id="calgrid"></div>
+    <p class="cal-note"><img src="assets/ui/heart.png" alt="">2月14日 星期日 · 正月初九</p>
+  </div>
+  <div class="panel count reveal">
+    <p id="cd-title">距离婚礼还有</p>
+    <div class="cd">
+      <div><b id="cd-d">--</b><span>天</span></div>
+      <div><b id="cd-h">--</b><span>时</span></div>
+      <div><b id="cd-m">--</b><span>分</span></div>
+      <div><b id="cd-s">--</b><span>秒</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 四季相册 ============ -->
+<section id="album" class="sec">
+  <h2 class="sign reveal"><img src="assets/ui/star.png" alt="">我们的四季</h2>
+  <p class="tip reveal">点击照片可以放大观看</p>
+  <div id="seasons"></div>
+</section>
+
+<!-- ============ 婚宴信息 ============ -->
+<section id="banquet" class="sec">
+  <h2 class="sign reveal"><img src="assets/ui/envelope.png" alt="">婚宴信息</h2>
+  <figure class="frame reveal pix"><img src="assets/art/venue.jpg" alt="喜宴" loading="lazy"></figure>
+
+  <div class="panel info reveal">
+    <div class="row">
+      <span class="tag">时间</span>
+      <div>
+        <p class="k">2027年2月14日</p>
+        <p class="k">星期日 中午 <em>12:08</em> 开席</p>
+        <p class="s">农历丁未年 正月初九</p>
+      </div>
+    </div>
+    <div class="row">
+      <span class="tag">地点</span>
+      <div>
+        <p class="k">于都县 万嘉喜宴</p>
+        <p class="k"><em>鎏金岁月厅</em></p>
+      </div>
+    </div>
+    <a class="btn btn-red wide" id="nav" href="https://uri.amap.com/search?keyword=%E4%B8%87%E5%98%89%E5%96%9C%E5%AE%B4&city=%E4%BA%8E%E9%83%BD%E5%8E%BF&view=map&src=wedding&callnative=1">打开地图导航</a>
+  </div>
+
+  <div class="panel info reveal">
+    <div class="row">
+      <span class="tag">电话</span>
+      <div><p class="s">有任何问题，欢迎随时联系我们</p></div>
+    </div>
+    <a class="tel" href="tel:15270793060">
+      <span>新郎 赖祖峰<b>152 7079 3060</b></span><i class="btn">拨打</i>
+    </a>
+    <a class="tel" href="tel:17679320209">
+      <span>新娘 廖慧娟<b>176 7932 0209</b></span><i class="btn">拨打</i>
+    </a>
+  </div>
+</section>
+
+<!-- ============ 结尾 ============ -->
+<section id="end" class="sec">
+  <figure class="frame reveal pix"><img src="assets/art/ending.jpg" alt="" loading="lazy"></figure>
+  <div class="panel bless reveal">
+    <p class="k">恭候您的光临</p>
+    <p class="s">您的到来，是我们最好的礼物</p>
+    <button id="bless" class="btn btn-red big">送上祝福 <img src="assets/ui/heart.png" alt="♥"></button>
+    <p class="s" id="bless-n">点一下，为新人送上一颗爱心</p>
+  </div>
+  <div class="junimos reveal" aria-hidden="true">
+    <img src="assets/ui/junimo_g.png" alt=""><img src="assets/ui/junimo_p.png" alt=""><img src="assets/ui/junimo_y.png" alt=""><img src="assets/ui/junimo_b.png" alt=""><img src="assets/ui/junimo_v.png" alt="">
+  </div>
+  <footer>
+    <p>赖祖峰 <img src="assets/ui/heart.png" alt="♥"> 廖慧娟</p>
+    <p>2027.02.14 · 于都</p>
+  </footer>
+</section>
+</main>
+
+<!-- 大图查看 -->
+<div id="lb" class="lb" hidden>
+  <img id="lb-img" alt="">
+  <button class="lb-x btn" id="lb-x">关闭</button>
+  <button class="lb-p btn" id="lb-p">上一张</button>
+  <span id="lb-n"></span>
+  <button class="lb-q btn" id="lb-q">下一张</button>
+</div>
+
+<audio id="bgm" src="assets/bgm.mp3" loop preload="auto"></audio>
+<script src="app.js"></script>
+</body>
+</html>
